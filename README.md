@@ -33,4 +33,4 @@ Clique em **Nova partida** para jogar novamente.
 - Envio da tentativa pela tecla Enter.
 
 ## Link do jogo
-Adicione aqui o endereço do GitHub Pages depois de publicar o projeto.
+https://darllanmartins-cyber.github.io/web1-jogo-palavras/
