@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe a Palavra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="jogo">
+        <header class="cabecalho">
+            <span class="etiqueta">WEB I • JOGO DE PALAVRAS</span>
+            <h1>Adivinhe a Palavra</h1>
+            <p class="subtitulo">Descubra a palavra secreta antes que suas tentativas acabem.</p>
+        </header>
+
+        <section class="painel">
+            <div class="informacoes">
+                <div class="informacao">
+                    <span class="rotulo">TENTATIVAS</span>
+                    <strong id="tentativas">6</strong>
+                </div>
+                <div class="informacao">
+                    <span class="rotulo">CATEGORIA</span>
+                    <strong id="categoria">---</strong>
+                </div>
+            </div>
+
+            <p class="rotulo rotulo-palavra">PALAVRA SECRETA</p>
+            <p id="palavra" class="palavra" aria-live="polite">_ _ _ _</p>
+
+            <div class="dica">
+                <span aria-hidden="true">💡</span>
+                <p id="dica">A dica aparecerá aqui.</p>
+            </div>
+
+            <label for="letra">Digite uma letra</label>
+            <div class="entrada">
+                <input id="letra" type="text" maxlength="1" autocomplete="off"
+                       placeholder="?" aria-label="Digite uma letra">
+                <button id="btn-tentar" type="button">Tentar</button>
+            </div>
+
+            <p id="mensagem" class="mensagem" aria-live="polite">Boa sorte!</p>
+
+            <div class="letras-area">
+                <span class="rotulo">LETRAS UTILIZADAS</span>
+                <p id="letras-usadas">Nenhuma letra ainda.</p>
+            </div>
+
+            <button id="btn-reiniciar" class="botao-secundario" type="button">↻ Nova partida</button>
+        </section>
+
+        <footer>Desenvolvido para a atividade de encerramento de Web I.</footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
